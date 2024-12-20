@@ -1,0 +1,214 @@
+.mainContent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  gap: 64px;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0 32px;
+}
+
+header img {
+  margin-bottom: 0;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  background-clip: text;
+  background-size: 100% 200%;
+}
+
+.gameLists {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 24px;
+  width: 90%;
+  margin: 5% 0 10%;
+}
+
+.gameLists a {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0;
+  text-decoration: none;
+  background: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px 4px rgb(39, 39, 39, 0.5);
+  text-transform: uppercase;
+  background: var(--cardTheme);
+}
+
+.gameLists a p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 4px 0 0;
+  color: gold;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 8px 0 16px;
+}
+
+.title span {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  background-clip: text;
+  background-size: 100% 200%;
+}
+
+@keyframes molaGradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes godelGradient {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.Mola {
+  background: linear-gradient(180deg, white 50%, #ffd700 50%);
+  background-position: 0 0;
+  animation: molaGradient 5s ease-in infinite;
+}
+
+.Godel {
+  background: linear-gradient(180deg, white 50%, #ffd700 50%);
+  animation: godelGradient 5s ease-in infinite;
+}
+
+@keyframes tinishuShrink {
+  0% {
+    font-size: 2.5rem;
+  }
+  50% {
+    font-size: 1rem;
+  }
+  100% {
+    font-size: 2.5rem;
+  }
+}
+
+.Tinishu {
+  animation: tinishuShrink 5s ease-in-out infinite;
+  background: white;
+}
+
+.Satn {
+  padding: 0 4px;
+  position: relative;
+  display: inline-block;
+  background: white;
+}
+
+.Satn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid gold;
+  border-radius: 5px;
+  box-sizing: border-box;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  animation: Satn-animation 3s linear infinite;
+}
+
+@keyframes Satn-animation {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.Ke {
+  background: white;
+}
+
+.Amestu {
+  background: white;
+}
+
+.getCoins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px, 16px;
+}
+
+.getCoins a {
+  text-decoration: none;
+}
+
+.getCoins button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.6rem;
+  background: var(--goldTheme);
+  width: 100%;
+  height: 64px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 12px 6px #27272780;
+}
+
+.getCoins p {
+  color: var(--buttonText);
+  background-clip: text;
+  background-size: 100% 200%;
+}

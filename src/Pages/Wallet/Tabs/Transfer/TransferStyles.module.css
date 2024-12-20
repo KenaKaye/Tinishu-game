@@ -1,0 +1,44 @@
+.transferCoinsScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.transferCoinsScreen input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 70%;
+  font-size: 1.3rem;
+}
+
+.transferCoinsScreen img {
+  margin: 10% 0;
+}
+
+.transferCoinsScreen button {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 16px 16px;
+  margin-top: 5%;
+  background: var(--goldTheme);
+  border: 1px groove var(--goldTheme);
+  border-radius: 8px;
+  color: var(--buttonText);
+  box-shadow: var(--boxShadow);
+}
+
+.confirmTransfer {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  width: 80%;
+}
+
+.confirmationButtons {
+  margin: 2%;
+}

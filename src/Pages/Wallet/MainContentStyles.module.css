@@ -1,0 +1,41 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  gap: 64px;
+}
+
+.tabs {
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 16px;
+  margin: -20% 0 -40%;
+}
+
+.tabs button {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 10px 12px;
+  margin: 0 10px;
+  background: var(--goldTheme);
+  border: 1px solid var(--goldTheme);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--buttonText);
+  box-shadow: var(--boxShadow);
+  text-transform: uppercase;
+}
+
+.activeTab {
+  transform: scale(1.2);
+}
+
+.mainContent div:last-of-type {
+  margin-top: 24px;
+}
